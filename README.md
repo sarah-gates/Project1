@@ -13,3 +13,5 @@ For the methods in the DataTimeOne class, I first used DateTimeFormatter to crea
 For the getValeOfSecond method, I once again used LocalDateTime.now to get the current date. From there, I used the .getSecond method to assign the second value to an int. This was then returned by the method.
 
 For sleepForThreeSec(), TimeUnit is used to make the program wait/sleep for 3 seconds.
+
+I have created and attached my UML documentation. I could not figure out how to underline the words for static classes, my apologies.
