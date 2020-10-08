@@ -1,49 +1,11 @@
 # Project1
 This documentation should contain understanding of the problem and your problem-solving approach, description of methods and variables used. This file will be reviewed by an instructor along with the codes during code review.
 1. Objective:
-The objective of this programming project is to implement a Java program which can read a file, parse data, perform some calculation on data, and some basics on Date/Time. After completing the project, students will have an intermediate understanding of reading data from a file and performing some calculation on data and basics of Date/Time function in Java.
-2. ProjectSpecification:
-2.1. Overall Program Behavior:
-In this project you have to perform some operations on Date/Time and String which will be extended in the later projects in this semester. You are also required to read the file provided, Mesonet.txt. You will require some edit/modification on data to get the station ID(s) (STID: four letter code). There are more than 100 stations, therefore try to declare an array with a small size and expand the array whenever needed.
-We provided Driver.java and Mesonet.txt [Pls, don’t edit these two files]. We also provided DateTimeOne.java, which is incomplete, you have to complete it. you are required to write DateTimeOne.java, HammingDist.java and README.md.
 
-We are providing: Driver.java, Mesonet.txt (Don’t modify these two files) We are providing but you will add code: DateTimeOne.java
-You will write: HammingDist.java and README.md
-One Paragraph of project description goes here
+  In order to complete the task, I broke HammingDist into a constructor with an additional three classes. I created lots of class variables to store the values that would go into the different information that had to be determined. 
+  The first class I made found the hamming distance between each of the code inputs and Norman. By going through each character of the code in a for loop and comparing them in an if statement, I was able to add up the amount of characters that differed in each code at a particular spot. This method then returned the hamming distance.
+  The second class that I created was to read the Mesonet file. In case the file was not found, I made sure to include a throws statement for an IOException. In this method, I created a file and a BufferedReader to read through the file for Mesonet. I used a for loop to skip over the first title lines of the file and then created a String variale code. I created a while loop so that the method would stop reading at the end of the file. If the readLine came back as null, this would cause the loop to break, and end the reading of the file. From each line of the file, I took out the specific substring with the code and then added it to the codes array.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 
